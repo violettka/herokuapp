@@ -4,7 +4,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HoversPage;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -18,10 +17,7 @@ public class HoversTest {
     public void initPageObjects() {
         System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         driver = new ChromeDriver();
-        System.out.println("meow");
-        System.out.println(driver);
         hoversPage = new HoversPage(driver);
-        System.out.println(hoversPage);
     }
 
     @AfterEach
