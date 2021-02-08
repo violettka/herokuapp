@@ -1,35 +1,18 @@
 package herokuapp;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HoversPage;
+
+import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static pages.Commons.BASE_URL;
 
 public class HoversTest {
 
-    HoversPage hoversPage;
-    private ChromeDriver driver;
-
-    @BeforeEach
-    public void initPageObjects() {
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-        driver = new ChromeDriver();
-        hoversPage = new HoversPage(driver);
-    }
-
-    @AfterEach
-    public void tearDown() {
-        driver.close();
-        driver.quit();
-    }
-
     @Test
     public void testHoversOnImages() {
-        //open Hovers Page
-        hoversPage.goToHoversPage();
+        //open Hovers Commons
+        HoversPage hoversPage = open(BASE_URL + "/hovers", HoversPage.class);
 
         for (int i = 1; i < 4; i++) {
             // hover over each profile picture
