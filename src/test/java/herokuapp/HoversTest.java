@@ -1,11 +1,11 @@
 package herokuapp;
 
 import org.junit.jupiter.api.Test;
-import pages.HoversPage;
+import pages.herokuapp.HoversPage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static pages.Commons.BASE_URL;
+import static pages.herokuapp.Commons.BASE_URL;
 
 public class HoversTest {
 

@@ -1,12 +1,12 @@
 package herokuapp;
 
 import org.junit.jupiter.api.Test;
-import pages.EmailSentPage;
-import pages.ResetPasswordPage;
+import pages.herokuapp.EmailSentPage;
+import pages.herokuapp.ResetPasswordPage;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.open;
-import static pages.Commons.BASE_URL;
+import static pages.herokuapp.Commons.BASE_URL;
 
 public class ForgotPassword {
 

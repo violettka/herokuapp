@@ -1,4 +1,4 @@
-package pages;
+package pages.herokuapp;
 
 import org.openqa.selenium.By;
 
