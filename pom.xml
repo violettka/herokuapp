@@ -56,7 +56,7 @@
                 <configuration>
                  <suiteXmlFiles>
                    <suiteXmlFile>
-                       testng.xml
+                       /src/test/resources/testng.xml
                    </suiteXmlFile>
                  </suiteXmlFiles>
                 </configuration>

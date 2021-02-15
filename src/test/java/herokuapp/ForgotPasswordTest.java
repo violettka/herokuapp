@@ -1,6 +1,7 @@
 package herokuapp;
 
-import org.junit.jupiter.api.Test;
+
+import org.testng.annotations.Test;
 import pages.EmailSentPage;
 import pages.ResetPasswordPage;
 

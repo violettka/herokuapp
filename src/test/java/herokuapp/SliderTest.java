@@ -1,6 +1,7 @@
 package herokuapp;
 
-import org.junit.jupiter.api.Test;
+
+import org.testng.annotations.Test;
 import pages.SliderPage;
 
 import static pages.Commons.BASE_URL;

@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Herokuapp" verbose="1" >
+    <test name="Regression" >
+      <classes>
+          <class name="herokuapp.SliderTest"/>
+      </classes>
+    </test>
+
+    <test name="Smoke">
+        <classes>
+            <class name="herokuapp.ForgotPasswordTest"/>
+        </classes>
+    </test>
+</suite>
