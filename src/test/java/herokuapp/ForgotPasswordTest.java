@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.open;
 import static pages.Commons.BASE_URL;
 
-public class ForgotPasswordTest {
+public class ForgotPasswordTest extends BaseTest {
 
     @Test
     public void resetPasswordPositive() {

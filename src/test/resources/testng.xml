@@ -1,15 +1,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Herokuapp" verbose="1" >
-    <test name="Regression" >
+<suite name="Herokuapp" verbose="1" parallel="tests" thread-count="2">
+
+    <test name="Regression Chrome" >
+        <parameter name="browser" value="chrome"/>
       <classes>
           <class name="herokuapp.SliderTest"/>
       </classes>
     </test>
 
-    <test name="Smoke">
+
+    <test name="Regression Firefox">
+        <parameter name="browser" value="firefox"/>
         <classes>
             <class name="herokuapp.ForgotPasswordTest"/>
         </classes>
     </test>
 </suite>
+
+

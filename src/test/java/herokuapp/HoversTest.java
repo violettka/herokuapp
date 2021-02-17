@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static pages.Commons.BASE_URL;
 
-public class HoversTest {
+public class HoversTest extends BaseTest {
 
     @Test
     public void testHoversOnImages() {
