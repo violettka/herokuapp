@@ -1,11 +1,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Herokuapp" verbose="1" parallel="tests" thread-count="2">
+<suite name="Herokuapp" verbose="1" parallel="tests" thread-count="3">
 
     <test name="Regression Chrome" >
         <parameter name="browser" value="chrome"/>
       <classes>
           <class name="herokuapp.SliderTest"/>
+          <class name="herokuapp.ForgotPasswordTest"/>
       </classes>
     </test>
 
