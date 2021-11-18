@@ -12,11 +12,11 @@ Project has a test class which represents the following scenario:
 
 ## Prerequisites Software/Tools
 
-1. Java Development Kit (Java 8)
+1. Java Development Kit (Java11)
 2. Java Runtime Environment
 3. Maven [ http://maven.apache.org/ ]
 4. Git [ http://git-scm.com/downloads ]
-5. Chrome browser
+5. Chrome browser/ Chromedriver
 6. JUnit
 
 ## Installation/Running Tests
