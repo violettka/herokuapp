@@ -15,7 +15,9 @@ public class HoversTest {
 
     @BeforeEach
     public void initPageObjects() {
+        // brew install chromedriver
         System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+
         driver = new ChromeDriver();
         hoversPage = new HoversPage(driver);
     }
@@ -39,4 +41,5 @@ public class HoversTest {
                     "username user" + i + " is not displayed!");
         }
     }
+
 }
