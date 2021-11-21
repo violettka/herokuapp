@@ -8,25 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HoversPage;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class HoversTest {
-
-    HoversPage hoversPage;
-    private ChromeDriver driver;
-
-    @BeforeEach
-    public void initPageObjects() {
-        // brew install chromedriver
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-
-        driver = new ChromeDriver();
-        hoversPage = new HoversPage(driver);
-    }
-
-    @AfterEach
-    public void tearDown() {
-        driver.close();
-        driver.quit();
-    }
+public class HoversTest extends BaseTest{
 
     @Test
     public void testHoversOnImages() {
@@ -39,6 +21,7 @@ public class HoversTest {
             // assertion
             assertTrue(hoversPage.isUsernamePresent("user" + i, i - 1),
                     "username user" + i + " is not displayed!");
+
         }
     }
 
