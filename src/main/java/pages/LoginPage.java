@@ -2,6 +2,8 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import utils.PropertiesLoader;
 
 public class LoginPage extends Page{
     public LoginPage(WebDriver driver) { super(driver); }
@@ -15,6 +17,12 @@ public class LoginPage extends Page{
     private static final By loginButton = By.className("radius");
     private static final By validationMessage = By.id("flash");
 
+    // Properties
+
+    public static String existingUsername = PropertiesLoader.loadProperty("existing.username");
+    public static String existingPassword = PropertiesLoader.loadProperty("existing.password");
+    public static String successfulLoginMessage = PropertiesLoader.loadProperty("positive.login.message");
+
     // Page Methods
 
     // Open Login Page
@@ -23,7 +31,21 @@ public class LoginPage extends Page{
     }
 
     // Insert Credentials
-    public void insertCredentials(String usernameValue, String passwordValue){
+    public void insertCredentials(String credentials){
+        String usernameValue = null;
+        String passwordValue = null;
+        if (credentials.equals("existing")) {
+           usernameValue = existingUsername;
+           passwordValue = existingPassword;
+        }
+        if (credentials.equals("wrong.username")) {
+            usernameValue = PropertiesLoader.loadProperty(credentials);
+            passwordValue = existingPassword;
+        }
+        if (credentials.equals("wrong.password")) {
+            usernameValue = existingUsername;
+            passwordValue = PropertiesLoader.loadProperty(credentials);
+        }
         driver.findElement(usernameField).sendKeys(usernameValue);
         driver.findElement(passwordField).sendKeys(passwordValue);
     }
