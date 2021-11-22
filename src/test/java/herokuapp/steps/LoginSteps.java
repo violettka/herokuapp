@@ -9,6 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.LoginPage;
+import pages.SecureAreaPage;
 import utils.PropertiesLoader;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -16,7 +17,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static pages.LoginPage.successfulLoginMessage;
 
 
-public class LoginSteps extends BaseTest {
+public class LoginSteps {
+    public LoginPage loginPage;
+    public SecureAreaPage secureAreaPage;
+    public ChromeDriver driver;
 
     @Before
     public void setupDriver() {
