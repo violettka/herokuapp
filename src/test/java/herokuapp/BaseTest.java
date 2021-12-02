@@ -17,6 +17,6 @@ public class BaseTest {
 
     @AfterTest
     public void closeBrowser(){
-        getWebDriver().close();
+         //getWebDriver().close();
     }
 }
