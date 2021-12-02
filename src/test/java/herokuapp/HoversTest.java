@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import pages.HoversPage;
 
 import static com.codeborne.selenide.Selenide.open;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 import static pages.Commons.BASE_URL;
 
 public class HoversTest {
