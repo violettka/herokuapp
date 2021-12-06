@@ -6,10 +6,4 @@
           <class name="herokuapp.SliderTest"/>
       </classes>
     </test>
-
-    <test name="Smoke">
-        <classes>
-            <class name="herokuapp.ForgotPasswordTest"/>
-        </classes>
-    </test>
 </suite>
