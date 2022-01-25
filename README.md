@@ -1,6 +1,6 @@
 ## web-automation
 
-This is the web test automation project for testing http://the-internet.herokuapp.com/ website. It was built using Java 8, Selenium 3, JUnit frameworks.
+This is the web test automation project for testing http://the-internet.herokuapp.com/ website. It was built using Java 11, Selenium 3, JUnit frameworks.
 
 ## Tests
 
@@ -12,7 +12,7 @@ Project has a test class which represents the following scenario:
 
 ## Prerequisites Software/Tools
 
-1. Java Development Kit (Java 8)
+1. Java Development Kit (Java 11)
 2. Java Runtime Environment
 3. Maven [ http://maven.apache.org/ ]
 4. Git [ http://git-scm.com/downloads ]
